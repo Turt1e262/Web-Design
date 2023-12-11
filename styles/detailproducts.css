@@ -1,0 +1,43 @@
+.container1 {
+    max-width: 5000px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto; /* Đặt hai cột có kích thước tự động */
+    grid-template-areas: "img details"; /* Đặt vị trí cho các phần tử */
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+}
+
+
+
+.product-image {
+    width: 300px;
+    height: auto;
+}
+
+.detailsproduct {
+    grid-area: details; /* Đặt phần tử detailsproduct vào vị trí được đặt bởi grid-template-areas */
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    color: #333;
+     
+}
+
+#name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#price {
+    font-size: 20px;
+    color: #009688;
+    margin-bottom: 10px;
+}
+
+#des {
+    font-size: 16px;
+    color: #666;
+}

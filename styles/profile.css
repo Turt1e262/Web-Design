@@ -1,0 +1,157 @@
+.media-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+.single-card {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.image-card img {
+  width: 100%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.image-card {
+  position: relative;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.image-card::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0%;
+  background: rgba(145, 194, 183, 0.418);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.info-card {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  margin: auto;
+  padding: 24px;
+  opacity: 0;
+  font-size: 14px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  z-index: 6;
+  margin-bottom: 0px;
+}
+
+.info-card button {
+  background-color: whitesmoke;
+  color: #333;
+  border: none;
+  padding: 12px 24px;
+  margin-top: 24px;
+}
+
+.info-card p {
+  font-size: 0.95em;
+  color: #fdfdfd;
+}
+
+.youth-logo {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  width: 50% !important;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.image-card:hover .info-card {
+  opacity: 1;
+  margin-bottom: 32px;
+}
+
+.image-card:hover::before,
+.image-card:hover img {
+  height: 98.5%;
+  border-radius: 25px;
+}
+
+@media (max-width: 576px) {
+  .single-card {
+    width: 100% !important;
+  }
+  .info-card p {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 992px) {
+  .youth-logo {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  .single-card {
+    width: 45%;
+  }
+  .info-card p {
+    font-size: 0.95em;
+  }
+}
+.profile-info {
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
+
+.user-details {
+  margin-bottom: 20px;
+}
+
+.user-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  
+}
+
+.user-details span {
+  font-weight: bold;
+  color: #3498db;
+}
+
+.user-details img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
+.green-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.green-btn:hover {
+  background-color: #219952;
+}
